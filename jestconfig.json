@@ -1,0 +1,12 @@
+{
+    "transform": {
+      "^.+\\.(t|j)sx?$": "ts-jest",
+      "^.+\\.css$": "./css-transform.js"
+    },
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "identity-obj-proxy"
+    },
+    "testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node", "css"],
+    "testEnvironment": "jsdom"
+  }

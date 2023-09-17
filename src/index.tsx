@@ -2,9 +2,10 @@ import { Dispatch, SetStateAction, useEffect, useState } from 'react'
 import { formatDefaultValue, formatNumberInputWithDecimals, formatValue } from './utils/utils'
 import { CurrencyCode } from './types/currencies'
 import { getCurrencySymbol } from './utils/currency-symbol.util'
-import './currency-input.css'
+import { defaultStyles } from './default-styles'
+import './index.css'
 
-export interface CurrencyInputProps {
+type CurrencyInputProps = {
   onChange: Dispatch<SetStateAction<any>> | ((value: string | number) => void)
   defaultValue?: string | number
   type: 'text' | 'number'
@@ -19,19 +20,6 @@ export interface CurrencyInputProps {
     fontWeight?: string
     borderRadius?: string
   }
-}
-
-const defaultStyles = {
-  display: 'flex',
-  width: 'fit-content',
-  alignItems: 'center',
-  height: '40px',
-  padding: '7px 10px',
-  fontSize: '2rem',
-  color: '#000000',
-  border: '2px solid #C0C0C0',
-  borderRadius: '5px',
-  fontWeight: '500',
 }
 
 function CurrencyInput({
