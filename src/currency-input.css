@@ -1,12 +1,9 @@
-
 .inputContainer:focus-within {
-    border-width: 3px !important;
-  }
-
-
-.inputContainer > input{
-    all: unset !important;
-    text-align: left !important; 
-    width: 90% !important;
+  border-width: 3px !important;
 }
 
+.inputContainer > input {
+  all: unset !important;
+  text-align: left !important;
+  width: 90% !important;
+}
