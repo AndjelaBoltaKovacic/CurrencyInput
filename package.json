@@ -1,0 +1,24 @@
+{
+    "name": "decimal-currency-input",
+    "version": "1.0.0",
+    "description": "Custom input component that adds decimals to the amount while typing",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\""
+    },
+    "keywords": [],
+    "author": "boltica",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/react": "^18.0.12",
+        "@typescript-eslint/eslint-plugin": "^5.27.1",
+        "@typescript-eslint/parser": "^5.27.1",
+        "eslint": "^8.17.0",
+        "eslint-plugin-react": "^7.30.0",
+        "eslint-plugin-react-hooks": "^4.5.0",
+        "react": "^18.1.0",
+        "react-dom": "^18.1.0",
+        "typescript": "^4.7.3"
+    }
+}
