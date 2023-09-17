@@ -4,7 +4,8 @@
   "description": "Custom input component that adds decimals to the amount while typing",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir docs --public-url .",
     "test": "jest --config jestconfig.json",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\""
