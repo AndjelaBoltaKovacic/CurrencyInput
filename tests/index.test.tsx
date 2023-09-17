@@ -29,7 +29,7 @@ describe('CurrencyInput', () => {
         expect(mockOnChange).toHaveBeenCalledWith('1,234.56');
     });
 
-    fit('formats the input value correctly with custom styles', () => {
+    it('formats the input value correctly with custom styles', () => {
         const component = render(
             <CurrencyInput
                 onChange={() => { }}
