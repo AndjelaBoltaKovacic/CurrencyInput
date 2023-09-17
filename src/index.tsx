@@ -1,9 +1,9 @@
 import { Dispatch, SetStateAction, useEffect, useState } from 'react'
+import './styles.css'
 import { formatDefaultValue, formatNumberInputWithDecimals, formatValue } from './utils/utils'
 import { CurrencyCode } from './types/currencies'
 import { getCurrencySymbol } from './utils/currency-symbol.util'
 import { defaultStyles } from './default-styles'
-import './index.css'
 
 type CurrencyInputProps = {
   onChange: Dispatch<SetStateAction<any>> | ((value: string | number) => void)

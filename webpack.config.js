@@ -1,9 +1,11 @@
-const path = require('path')
+const path = require('path');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+
 
 module.exports = {
-  entry: './src/index.tsx', // Update with your entry file
+  entry: ["./src/index.css", "./src/index.tsx"],// Update with your entry file
   output: {
-    filename: 'bundle.js',
+    filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
   },
   resolve: {
@@ -14,12 +16,15 @@ module.exports = {
       {
         test: /\.tsx?$/,
         use: 'ts-loader',
-        exclude: /node_modules/,
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        sideEffects: true,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
     ],
   },
+  plugins: [
+    new MiniCssExtractPlugin(),
+  ],
 }

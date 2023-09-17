@@ -1,0 +1,15 @@
+# Exclude source files and directories
+/src/
+/tests/
+/example/
+/coverage/
+
+# Exclude development and configuration files
+.gitignore
+jestconfig.json
+package-lock.json
+tsconfig.json
+.prettierrc.json
+.babel.config.js
+webpack.config.js
+css-transform.js

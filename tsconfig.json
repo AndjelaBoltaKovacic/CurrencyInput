@@ -1,10 +1,29 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
-    "target": "es2020",
-    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "paths": {
+      "*": ["types/*"]
+    },
+    "target": "esnext",
+    "moduleResolution": "node",
     "module": "commonjs",
-    "strict": true,
-    "types": ["jest", "@types/jest"]
-  }
+    "jsx": "react-jsx",
+    "lib": ["es2016", "dom", "es5"],
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "removeComments": true,
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    "typeRoots": ["node_modules/@types"]
+  },
+  "exclude": [ "dist", "__tests__"],
+  "include": ["./src/**/*.tsx", "./src/**/*.ts", "./src/**/*.css"]
 }
