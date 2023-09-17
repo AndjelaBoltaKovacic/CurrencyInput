@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
     "outDir": "./dist",
-    "target": "es6",
+    "target": "es2020", 
     "jsx": "react-jsx",
     "module": "commonjs",
-    "strict": true
-  }
+    "strict": true,
+    "types": ["jest", "@types/jest", "@types/jest-dom"],
+  },
 }
