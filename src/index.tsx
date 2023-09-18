@@ -42,7 +42,6 @@ function CurrencyInput({
         </span>
       )}
       <input
-        maxLength={12}
         id='currency-input'
         value={editedValue}
         type='text'
