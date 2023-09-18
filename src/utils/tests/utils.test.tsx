@@ -1,4 +1,4 @@
-import { formatNumberInputWithDecimals, getFloat, formatValue, formatDefaultValue } from '../src/utils/utils'
+import { formatNumberInputWithDecimals, getFloat, formatValue, formatDefaultValue } from '../utils'
 
 describe('formatNumberInputWithDecimals', () => {
   it('formats a string with digits correctly', () => {

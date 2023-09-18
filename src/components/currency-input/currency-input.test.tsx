@@ -1,6 +1,6 @@
+import '@testing-library/jest-dom'
 import { render, fireEvent, queryByAttribute } from '@testing-library/react'
-import '@testing-library/jest-dom/extend-expect'
-import CurrencyInput from '../src/index'
+import CurrencyInput from './currency-input'
 
 const mockSetState = jest.fn()
 

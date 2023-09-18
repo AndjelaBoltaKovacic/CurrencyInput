@@ -6,7 +6,7 @@
     },
     "target": "esnext",
     "moduleResolution": "node",
-    "module": "commonjs",
+    "module": "esnext",
     "jsx": "react-jsx",
     "lib": ["es2016", "dom", "es5"],
     "declaration": true,
@@ -21,7 +21,6 @@
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-
     "typeRoots": ["node_modules/@types"]
   },
   "exclude": [ "dist", "__tests__"],
