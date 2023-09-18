@@ -3,23 +3,14 @@ import './styles.css'
 import { formatDefaultValue, formatNumberInputWithDecimals, formatValue } from './utils/utils'
 import { CurrencyCode } from './types/currencies'
 import { getCurrencySymbol } from './utils/currency-symbol.util'
-import { defaultStyles } from './default-styles'
+import { defaultStyles } from './constants/styles'
 
 type CurrencyInputProps = {
   onChange: Dispatch<SetStateAction<any>> | ((value: string | number) => void)
   defaultValue?: string | number
   type: 'text' | 'number'
   currencyCode?: CurrencyCode
-  customStyles?: {
-    width?: string
-    height?: string
-    padding?: string
-    fontSize?: string
-    color?: string
-    border?: string
-    fontWeight?: string
-    borderRadius?: string
-  }
+  customStyles?: any
 }
 
 function CurrencyInput({

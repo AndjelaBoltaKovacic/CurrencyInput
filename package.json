@@ -1,7 +1,7 @@
 {
   "name": "decimal-input-currency",
   "version": "1.0.8",
-  "description": "Custom input component that adds decimals to the amount while typing",
+  "description": "React custom input component with auto currency formatting.",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -27,7 +27,16 @@
     "LICENSE",
     "README.md"
   ],
-  "keywords": [],
+   "keywords": [
+    "react",
+    "input",
+    "currency",
+    "decimals",
+    "symbol",
+    "formatter",
+    "component",
+    "custom"
+  ],
   "author": "boltica",
   "license": "MIT",
   "devDependencies": {
@@ -56,3 +65,4 @@
     "typescript": "^4.7.3"
   }
 }
+
