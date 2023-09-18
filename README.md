@@ -23,13 +23,13 @@ yarn add react-currency-input-formatter
 ```
  In your component 
 ```
-import CurrencyInput from 'decimal-input-currency';
+import CurrencyInput from 'react-currency-input-formatter';
 
 ```
  
 # Props
 
-The "Decimal Currency Input" component accepts several props to customize its behavior and appearance. This guide explains each prop and its purpose.
+The "Currency Input" component accepts several props to customize its behavior and appearance. This guide explains each prop and its purpose.
 
 ### `onChange` (Dispatch<SetStateAction<any>> | (value: string | number) => void), required
  **A callback function that is called when the input value changes.**
@@ -51,7 +51,6 @@ The "Decimal Currency Input" component accepts several props to customize its be
 ### `customStyles` (object, optional)
 
 - **Description**: An object containing custom styles to apply to the input field.
-- **Type**: An object with properties like `width`, `height`, `padding`, `fontSize`, `color`, `border`, `fontWeight`, and `borderRadius`.
 - **All styles are optional and if passed they will replace their matching default styles while the other styles will remain**
 
 ## Default styles
